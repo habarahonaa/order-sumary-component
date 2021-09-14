@@ -50,7 +50,7 @@ main {
   flex-direction: column;
   height: 575px;
   justify-self: center;
-  max-width: 21rem;
+  max-width: 90vw;
 }
 
 .card__img img {
@@ -116,9 +116,10 @@ main {
   border-radius: 10px;
   display: flex;
   height: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   max-height: 70px;
   max-width: 290px;
+  padding: 0 1rem;
   width: 290px;
 }
 
@@ -143,16 +144,49 @@ main {
   margin-bottom: 1.5rem;
 }
 
+.card__button--cancel, .card__button--main, .membership__change {
+  cursor: pointer;
+}
+
+.membership__change:hover {
+  color: var(--desaturated-blue);
+  transition: 0.2s ease-in;
+}
+
+.card__button--main:hover {
+  background-color:hsl(245, 84%, 36%);
+  transition: 0.2s ease-in;
+}
+
+.card__button--cancel:hover {
+  color: red;
+  transition: 0.2s ease-in;
+}
+
 /* media queries */
 
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 376px) {
   main {
-    background-repeat: repeat-x;
+    background-image: unset;
+  }
+
+  .card {
+    height: 600px;
+    max-width: 450px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   main {
     background: repeat-x url("../images/pattern-background-desktop.svg");
+  }
+  .card__membership {
+    max-width: 350px;
+    width: 350px;
+  }
+  .card__button--main {
+    margin: 1rem 0 1rem;
+    max-width: 350px;
+    width: 350px;
   }
 }

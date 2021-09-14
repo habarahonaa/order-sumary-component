@@ -54,6 +54,18 @@
       </div>
     </div>
   </main>
-</body>
+  <script>
+    const membershipChange = document.querySelector('.membership__change');
+    const paymentButton = document.querySelector('.card__button--main');
+    const cancelButton = document.querySelector('.card__button--cancel');
 
+    membershipChange.addEventListener('click', handleClick());
+    paymentButton.addEventListener('click', handleClick());
+    cancelButton.addEventListener('click', handleClick());
+
+    function handleClick(event) {
+      location.href='#';
+    }
+  </script>
+</body>
 </html>
