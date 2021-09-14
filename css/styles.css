@@ -64,7 +64,7 @@ main {
   flex-direction: column;
   height: 80%;
   justify-content: space-around;
-  max-width: 80%;
+  max-width: 90%;
   text-align: center;
 }
 
@@ -87,7 +87,8 @@ main {
   color: var(--desaturated-blue);
   font-weight: 400;
   line-height: 1.6;
-  text-align: center;
+  margin: 0 auto;
+  max-width: 90%;
 }
 
 .membership__plan {
@@ -95,7 +96,7 @@ main {
 }
 
 .membership__plan p:first-child {
-  color: black;
+  color: var(--dark-blue);
   font-weight: 700;
 }
 
@@ -118,9 +119,9 @@ main {
   height: 100%;
   justify-content: space-between;
   max-height: 70px;
-  max-width: 290px;
+  max-width: 100%;
   padding: 0 1rem;
-  width: 290px;
+  width: 100%;
 }
 
 .card__button--main {
@@ -130,12 +131,12 @@ main {
   color: white;
   font-weight: 900;
   height: 100%;
-  margin-top: -0.8rem;
+  margin-top: -0.5rem;
   max-height: 50px;
-  max-width: 290px;
+  max-width: 100%;
   line-height: 50px;
   text-align: center;
-  width: 290px;
+  width: 100%;
 }
 
 .card__button--cancel {
