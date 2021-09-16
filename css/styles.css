@@ -183,12 +183,12 @@ main {
     background: repeat-x url("../images/pattern-background-desktop.svg");
   }
   .card__membership {
-    max-width: 350px;
-    width: 350px;
+    max-width: 320px;
+    width: 100%;
   }
   .card__button--main {
     margin: 1rem 0 1rem;
-    max-width: 350px;
-    width: 350px;
+    max-width: 320px;
+    width: 100%;
   }
 }
